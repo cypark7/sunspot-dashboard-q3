@@ -39,7 +39,6 @@ def plot_advanced_sunspot_visualizations(df, sunactivity_col='SUNACTIVITY',
         xs = np.linspace(data.min(), data.max(), 200)
         density = gaussian_kde(data)
 
-        '''코드를 작성하시오'''
         axs[0, 1].hist(
             data,
             bins=hist_bins,
@@ -113,7 +112,6 @@ try:
     st.sidebar.header("시각화 파라미터 조절")
 
     # 연도 범위 선택
-    '''코드를 작성하시오'''
     year_range = st.sidebar.slider(
         "연도 범위 선택",
         min_value=int(df["YEAR"].min()),
@@ -139,7 +137,6 @@ try:
     )
 
     # 산점도 점 크기 조절
-    '''코드를 작성하시오'''
     point_size = st.sidebar.slider(
         "산점도 점 크기",
         min_value=5,
@@ -149,7 +146,6 @@ try:
 
 
     # 산점도 투명도 조절
-    '''코드를 작성하시오'''
     point_alpha = st.sidebar.slider(
         "산점도 투명도",
         min_value=0.1,
