@@ -107,7 +107,6 @@ try:
     df = load_data('data/sunspots.csv')
 
     # 사이드바에 파라미터 조절 슬라이더 추가
-    '''코드를 작성하시오'''
     st.sidebar.header("시각화 파라미터 조절")
 
     # 연도 범위 선택
